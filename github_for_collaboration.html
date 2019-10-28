@@ -366,13 +366,12 @@ summary {
 </div>
 
 
-<pre class="r"><code>library(tidyverse)</code></pre>
 <div id="git-and-github" class="section level1">
 <h1>Git and GitHub</h1>
 <p>Git is a version control system. It’s like Google docs, but accommodates many types of files that Google docs cannot … like .rmd files! GitHub is an online interface to work with Git.</p>
 <p>Why are we learning these things?!</p>
 <ol style="list-style-type: decimal">
-<li><p>GitHub is well integrated with RStudio. So, we won’t need to use any command-line functions.</p></li>
+<li><p>GitHub is well integrated with RStudio. So, we won’t need to use any command-line functions, at least not after we have everything set up.</p></li>
 <li><p>You are required to use R for your final project. The presentation or paper needs to be written up as a .rmd document that can be knitted to an html document. Using GitHub will allow you to easily work with your group even when you are not together.</p></li>
 <li><p>GitHub teaches you good habits. You are forced to think about when you save and to make notes about what changes you made each time you do, for example.</p></li>
 </ol>
@@ -381,7 +380,7 @@ summary {
 <h1>Create a GitHub account</h1>
 <ul>
 <li>Go to <a href="http://github.com" class="uri">http://github.com</a></li>
-<li>Create a username … see Jenny Bryan’s <a href="https://happygitwithr.com/github-acct.html">tips</a>. Incorporate your actual name, use another user name you already have, pick a username you will be comfortable revealing to a future boss. Your Macalester username might be a good option.</li>
+<li>Create a username … see Jenny Bryan’s <a href="https://happygitwithr.com/github-acct.html">tips</a>. Incorporate your actual name, use another user name you already have, <em>pick a username you will be comfortable revealing to a future boss</em>. Your Macalester username might be a good option.</li>
 </ul>
 </div>
 <div id="install-git" class="section level1">
@@ -407,6 +406,14 @@ summary {
 </ul>
 <pre><code>git --version
 git config</code></pre>
+<ul>
+<li><p>Install the <code>usethis</code> package in R Studio. Then, close R Studio and reopen it.</p></li>
+<li><p>Load the <code>usethis</code> library:</p></li>
+</ul>
+<pre><code>library(usethis)</code></pre>
+<ul>
+<li>Run the following code with some minor changes. The <code>user.name</code> is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The <code>user.email</code> <em>MUST</em> be the same as your GitHub user email.</li>
+</ul>
 </div>
 <div id="create-our-first-repo" class="section level1">
 <h1>Create our first repo</h1>
