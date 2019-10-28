@@ -70,13 +70,45 @@ library(usethis)
 * Run the following code with some minor changes. The `user.name` is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The `user.email` *MUST* be the same as your GitHub user email. 
 
 
-# Create your first repo
+# Create your first repo and use it with R Studio
 
-# Pull --> Commit --> Push ... (and Communication)
+The word "repo" is short for repository, and that is exactly what it is: a place for things (our files, in this case) to be stored. It is like the folder you created to store all your work for this class. 
+
+Let's go to [GitHub](https://github.com/) and login. After you login, you should see a little icon in the upper right-hand corner. Mine is an image of me. If I click on that a drop-down appears and I can choose "Your repositories". Do that. You should see something like this:
+
+![](new_repo.png)
+
+Click on the "New" button. Name your repository `my_test_repo` and click "Initialize this repository with a README". Then click Create repository.
+
+![](create_new_repo.png)
+
+There are things you can do directly within GitHub, but we'll focus on its integration with R Studio. 
+
+# Cloning a repo
+
+Think of cloning a repo as "copying" the repository to your computer. But when it does the copying, it keeps the connection with the online repo. 
+
+Let's do this. On your my_test_repo page, choose the green button that says Clone or download. Copy the path by highlighting and clicking the icon that looks like a notebook with an arrow on it. 
+
+Now go to R Studio. Click on File --> New Project ... You should see a window that looks like this:
+
+![](new_project.png)
+
+Choose Version Control. Then you should see a screen that looks like this:
+
+![](github.png)
+
+Choose Git. Then you should see a screen that looks like this one, without all the details filled in. The Repository URL is where you should paste the repo URL you cloned from github. It will also populate the Project directory name. Just leave that. **Pay attention** to where the project directory is located and change it to a better directory if appropriate. Click Create Project. 
+
+![](clone_git.png)
+
+If you look in the Files tab in the lower right-hand pane of R Studio, you should see the .gitignore file, the project file (ends in .Rproj), and the README.md file. You should also see a Git tab in the upper right-hand pane in R Studio. If you click on the Git tab right now, you won't see anything there.  
+
+With the Git tab open, let's open the README.md file in R Studio. Make a small change to the file by adding the sentence, "I am changing something in this file." Then, click the save icon. When you do this, you will see README.md show up in the Git tab. 
 
 # Adding collaborators
 
-# Cloning a repo
+# Commit --> Push --> Pull --> ... (and Communication)
 
 # Merge conflicts
 
