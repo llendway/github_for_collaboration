@@ -180,17 +180,17 @@ Then, save the file and do the usual commit and push. You should see the changes
 
 1. In groups of 3-4, practice your GitHub skills.
 
-  a. Choose someone to create a new repo on GitHub called our_collaborative_graph. 
-  b. The creator adds the others as collaborators. 
-  c. The collaborators should check their email and accept being collaborators. 
-  d. The creator and the collaborators clone the repo locally.
-  e. A collaborator adds a .rmd file to the project locally. The title should be "Our graph" and add all the group members as authors. Add an R code chunk that loads the `tidyverse` librarary. Save the file, commit with message, and push to GitHub. Check online to assure it was pushed properly. 
-  f. All other group members pull the changes locally. 
-  g. A different collaborator adds another R code chunk. With the *mpg* dataset, create a scatterplot with *hwy* on the y-axis, *displ* on the x-axis and color the points by *drv*. Save changes. Knit the file. Then commit with message and push to GitHub. Make sure you stage all files in the commit. Check online to assure you see the changes.
-  h. All other group members pull the changes locally. 
-  i. Another group member (either collaborator or creator if you only have 3 group members) modifies the R code chunk that creates the graph, adding nice x and y labels and changing to `theme_minimal()`. Save changes. Knit the file. Then commit with message and push to GitHub. Make sure you stage all files in the commit. Check online to assure you see the changes.  
-  j. All grop members pull. The one who just pushed should see that they are already up to date. All others should see the changes reflected locally.  
-  k. Now, all group members should add something to the .rmd file. Don't tell each other what you're adding. When you are finished, save, knit, commit, and push to GitHub. At least one of you will get a merge conflict, so it will ask you to pull in changes from GitHub and fix the conflict. Do that. This time you will have to modify the .rmd file rather than the README like I showed earlier. 
+  a. Choose someone to create a new repo on GitHub called our_collaborative_graph.  
+  b. The creator adds the others as collaborators.  
+  c. The collaborators should check their email and accept being collaborators.  
+  d. The creator and the collaborators clone the repo locally.  
+  e. A collaborator adds a .rmd file to the project locally. The title should be "Our graph" and add all the group members as authors. Add an R code chunk that loads the `tidyverse` librarary. Save the file, commit with message, and push to GitHub. Check online to assure it was pushed properly.  
+  f. All other group members pull the changes locally.  
+  g. A different collaborator adds another R code chunk. With the *mpg* dataset, create a scatterplot with *hwy* on the y-axis, *displ* on the x-axis and color the points by *drv*. Save changes. Knit the file. Then commit with message and push to GitHub. Make sure you stage all files in the commit. Check online to assure you see the changes.  
+  h. All other group members pull the changes locally.  
+  i. Another group member (either collaborator or creator if you only have 3 group members) modifies the R code chunk that creates the graph, adding nice x and y labels and changing to `theme_minimal()`. Save changes. Knit the file. Then commit with message and push to GitHub. Make sure you stage all files in the commit. Check online to assure you see the changes.   
+  j. All grop members pull. The one who just pushed should see that they are already up to date. All others should see the changes reflected locally.   
+  k. Now, all group members should add something to the .rmd file. Don't tell each other what you're adding. When you are finished, save, knit, commit, and push to GitHub. At least one of you will get a merge conflict, so it will ask you to pull in changes from GitHub and fix the conflict. Do that. This time you will have to modify the .rmd file rather than the README like I showed earlier.  
   
 2. If you finish, 112 students should set up a project with their actual group project members. Include a .rmd file called something like "ideas.rmd" where you can share ideas, including topics and data you might be interested in analyzing. 155 students should take the group project survey on the moodle page. 
 
