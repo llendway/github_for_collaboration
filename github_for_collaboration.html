@@ -395,7 +395,7 @@ summary {
 <pre><code>which git</code></pre>
 <p>If this returns something like</p>
 <pre><code>/usr/bin/git</code></pre>
-<p>then you are finished and don’t need to install Git.</p>
+<p>then you are finished and don’t need to install Git. On a Windows machine, you may not even be able to type the <code>which git</code> command successfully. This should be fixed by installing git. Or you will have to use the shell.</p>
 <ul>
 <li><p>If you do not have Git installed, you need to install it. The instructions are slightly different for Windows and Macs.</p></li>
 <li><p>On a Windows machine:</p>
@@ -405,11 +405,15 @@ summary {
 </ul></li>
 <li><p>On a Mac:</p>
 <ul>
-<li>Go to the shell/terminal and enter one of these commands to elicit an offer to install developer command line tools. Accept the offer … click on install.</li>
+<li>Go to the shell/terminal and enter <strong>one</strong> of these commands to elicit an offer to install developer command line tools. Accept the offer … click on install.</li>
 </ul></li>
 </ul>
 <pre><code>git --version
 git config</code></pre>
+<ul>
+<li>Some of you on a Mac may need to do the following in the terminal if you try to open a project unsuccessfully. You’ll find out if this is the case in a moment.</li>
+</ul>
+<pre><code>xcode-select --install</code></pre>
 <ul>
 <li><p>Install the <code>usethis</code> package in R Studio. Then, close R Studio and reopen it.</p></li>
 <li><p>Load the <code>usethis</code> library:</p></li>

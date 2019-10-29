@@ -43,7 +43,7 @@ If this returns something like
 /usr/bin/git
 ```
 
-then you are finished and don't need to install Git.
+then you are finished and don't need to install Git. On a Windows machine, you may not even be able to type the `which git` command successfully. This should be fixed by installing git. Or you will have to use the shell. 
 
 * If you do not have Git installed, you need to install it. The instructions are slightly different for Windows and Macs.
 
@@ -54,11 +54,17 @@ then you are finished and don't need to install Git.
   
 * On a Mac:
 
-  + Go to the shell/terminal and enter one of these commands to elicit an offer to install developer command line tools. Accept the offer ... click on install.
+  + Go to the shell/terminal and enter **one** of these commands to elicit an offer to install developer command line tools. Accept the offer ... click on install.
   
 ```
 git --version
 git config
+```
+
+  + Some of you on a Mac may need to do the following in the terminal if you try to open a project unsuccessfully. You'll find out if this is the case in a moment.
+  
+```
+xcode-select --install
 ```
 
 * Install the `usethis` package in R Studio. Then, close R Studio and reopen it. 
