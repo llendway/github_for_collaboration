@@ -9,13 +9,17 @@ output:
 library(tidyverse)
 ```
 
+# Disclosure
+
+Much of this material has been adapted from [Happy git with R by Jenny Bryan](https://happygitwithr.com/). It is an excellent resource but contains a lot of information that we don't need for this class. If you want to use Git and GitHub in more advanced ways or if I wasn't clear in my instructions, you should definitely check it out. 
+
 # Git and GitHub
 
 Git is a version control system. It's like Google docs, but accommodates many types of files that Google docs cannot ... like .rmd files! GitHub is an online interface to work with Git. 
 
 Why are we learning these things?!
 
-1. GitHub is well integrated with RStudio. So, we won't need to use any command-line functions, at least not after we have everything set up.
+1. GitHub is well integrated with R Studio. So, we won't need to use any command-line functions, at least not after we have everything set up.
 
 2. You are required to use R for your final project. The presentation or paper needs to be written up as a .rmd document that can be knitted to an html document. Using GitHub will allow you to easily work with your group even when you are not together.
 
@@ -48,7 +52,7 @@ then you are finished and don't need to install Git.
 * On a Windows machine:
 
   + Install [Git for Windows](https://gitforwindows.org/). When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults. 
-  + RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.
+  + R Studio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.
   
 * On a Mac:
 
@@ -132,7 +136,7 @@ The person who was invited to be a collaborator will receive an email and should
 
 # Commit --> Push --> Pull --> ... (and Communication)
 
-Once you have added collaboratos, all the collaborators can commit and push. But, what happens if someone commits and pushes something and then you go to work on it on your computer ... how do you get those changes? ... PULL!
+Once you have added collaborators, all the collaborators can commit and push. But, what happens if someone commits and pushes something and then you go to work on it on your computer ... how do you get those changes? ... PULL!
 
 In your groups, try the following. You should each be collaborators on each other's projects, so you can change roles after doing it once.
 
@@ -168,11 +172,27 @@ Notice that it tells you the file where the merge conflict happened. You need to
 
 ![](merge_conflict_fix_code.png)
 
-The part after the word `HEAD` is what is in your local file. Everything after the `======` is what is in the remote file (ie. the changes made by your collaborator). You can decide to fix this in any way you want: combine the two ideas, delete both, just keep one, etc. When you are finished, be sure to get rid of the `<<<<<<< HEAD` and `>>>>>>> ` followed by the alphanumeric string, plus any othe weird characters.
+The part after the word `HEAD` is what is in your local file. Everything after the `======` is what is in the remote file (ie. the changes made by your collaborator). You can decide to fix this in any way you want: combine the two ideas, delete both, just keep one, etc. When you are finished, be sure to get rid of the `<<<<<<< HEAD` and `>>>>>>> ` followed by the alphanumeric string, plus any other weird characters.
 
 Then, save the file and do the usual commit and push. You should see the changes pushed out to GitHub.
 
 # Let's try this!
+
+1. In groups of 3-4, practice your GitHub skills.
+
+  a. Choose someone to create a new repo on GitHub called our_collaborative_graph. 
+  b. The creator adds the others as collaborators. 
+  c. The collaborators should check their email and accept being collaborators. 
+  d. The creator and the collaborators clone the repo locally.
+  e. A collaborator adds a .rmd file to the project locally. The title should be "Our graph" and add all the group members as authors. Add an R code chunk that loads the `tidyverse` librarary. Save the file, commit with message, and push to GitHub. Check online to assure it was pushed properly. 
+  f. All other group members pull the changes locally. 
+  g. A different collaborator adds another R code chunk. With the *mpg* dataset, create a scatterplot with *hwy* on the y-axis, *displ* on the x-axis and color the points by *drv*. Save changes. Knit the file. Then commit with message and push to GitHub. Make sure you stage all files in the commit. Check online to assure you see the changes.
+  h. All other group members pull the changes locally. 
+  i. Another group member (either collaborator or creator if you only have 3 group members) modifies the R code chunk that creates the graph, adding nice x and y labels and changing to `theme_minimal()`. Save changes. Knit the file. Then commit with message and push to GitHub. Make sure you stage all files in the commit. Check online to assure you see the changes.  
+  j. All grop members pull. The one who just pushed should see that they are already up to date. All others should see the changes reflected locally.  
+  k. Now, all group members should add something to the .rmd file. Don't tell each other what you're adding. When you are finished, save, knit, commit, and push to GitHub. At least one of you will get a merge conflict, so it will ask you to pull in changes from GitHub and fix the conflict. Do that. This time you will have to modify the .rmd file rather than the README like I showed earlier. 
+  
+2. If you finish, 112 students should set up a project with their actual group project members. Include a .rmd file called something like "ideas.rmd" where you can share ideas, including topics and data you might be interested in analyzing. 155 students should take the group project survey on the moodle page. 
 
 # Resource
 
