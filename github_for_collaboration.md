@@ -71,6 +71,10 @@ library(usethis)
 
 * Run the following code with some minor changes. The `user.name` is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The `user.email` *MUST* be the same as your GitHub user email. 
 
+```
+use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
+```
+
 
 # Create your first repo and use it with R Studio
 
