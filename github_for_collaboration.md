@@ -130,6 +130,26 @@ The person who was invited to be a collaborator will receive an email and should
 
 # Commit --> Push --> Pull --> ... (and Communication)
 
+Once you have added collaboratos, all the collaborators can commit and push. But, what happens if someone commits and pushes something and then you go to work on it on your computer ... how do you get those changes? ... PULL!
+
+In your groups, try the following. You should each be collaborators on each other's projects, so you can change roles after doing it once.
+
+1. The collaborator first needs to clone the repo they were asked to collaborate on. If they have another project open, save, commit, and push any changes. Then, close that project and open the project they were asked to collaborate on by cloning the GitHub repo. The collaborator should have the project open in R Studio.  
+
+2. The collaborator should try pulling by clicking the aqua down arrow in the Git tab. You should get a message that looks like this:
+
+![](good_pull.png)
+
+3. The person who created the repo makes a change to their .rmd file. It can be a small change, like adding a sentence. That same person saves the file, commits (stage and write a commit message), and pushes it to GitHub. Check online to make sure the most recent changes have been pushed.
+
+4. The collaborator now pulls those changes to their local directory (to their computer). Click the pull icon. You should see a message sort of like this:
+
+![](pull_with_stuff.png)
+
+And check the file where a change was made to make sure the change is reflected in the file on your computer. 
+
+5. Go back and forth a couple more times making minor changes. The one who owns the repo should make the change and the collaborator should pull it in. Then switch roles. When you switch, be sure you are working with the correct project. 
+
 # Merge conflicts
 
 # Let's try this!
