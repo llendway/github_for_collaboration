@@ -154,9 +154,27 @@ And check the file where a change was made to make sure the change is reflected 
 
 # Merge conflicts
 
+When you are working on a project together, you are likely to run into a time when two of you are editing the same file at the same time. If you both try to push your changes, you will get what is called a "merge conflict." GitHub won't know which one to use. So, it will force you to decide. 
+
+When you try to push your changes to GitHub and someone else has already pushed their changes regarding the same file, you will get a message like this:
+
+![](git_push_merge_conflict.png)
+
+Then, when you do pull in the changes, you will get a message like this:
+
+![](git_pull_merge_conflict.png)
+
+Notice that it tells you the file where the merge conflict happened. You need to open that file and decide how to merge the conflicting information. It will look something like this at first:
+
+![](merge_conflict_fix_code.png)
+
+The part after the word `HEAD` is what is in your local file. Everything after the `======` is what is in the remote file (ie. the changes made by your collaborator). You can decide to fix this in any way you want: combine the two ideas, delete both, just keep one, etc. When you are finished, be sure to get rid of the `<<<<<<< HEAD` and `>>>>>>> ` followed by the alphanumeric string, plus any othe weird characters.
+
+Then, save the file and do the usual commit and push. You should see the changes pushed out to GitHub.
+
 # Let's try this!
 
-# Resources
+# Resource
 
 [Happy git with R by Jenny Bryan](https://happygitwithr.com/): great resource although it references the command line quite a bit
 
