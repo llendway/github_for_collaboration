@@ -134,7 +134,7 @@ Were you prompted for a username and password? Try making another modification, 
 
 1. Add a .rmd file to your project. Do this by going File --> New file --> R Markdown ... Add some words and an R code chunk to the .rmd file. Save it, commit it (don't forget the message!), and push it. Check GitHub online to assure you see the .rmd file there. 
 
-2. Now, knit your file locally. Commit the changes (make sure to put a check next to anything you want staged) and push them to GitHub. Check GitHub online to assure you see everything you expect. 
+2. Now, knit your file locally. Commit the changes (make sure to put a check next to anything you want staged - .rmd, .html, etc.) and push them to GitHub. Check GitHub online to assure you see everything you expect. 
 
 # Adding collaborators
 
