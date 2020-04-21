@@ -71,7 +71,7 @@ xcode-select --install
 
 * Install the `usethis` package in R Studio. Then, close R Studio and reopen it. 
 
-* Load the `usethis` library: 
+* Load the `usethis` library by running the following piece of code in the console: 
 
 ```
 library(usethis)
@@ -92,7 +92,7 @@ Let's go to [GitHub](https://github.com/) and login. After you login, you should
 
 ![](new_repo.png)
 
-Click on the "New" button. Name your repository `my_test_repo` and click "Initialize this repository with a README". Then click Create repository.
+Click on the "New" button. Name your repository `NAME_test_repo`, where `NAME` is actually your name, and click "Initialize this repository with a README". Then click Create repository.
 
 ![](create_new_repo.png)
 
@@ -168,7 +168,7 @@ And check the file where a change was made to make sure the change is reflected 
 
 # Merge conflicts
 
-When you are working on a project together, you are likely to run into a time when two of you are editing the same file at the same time. If you both try to push your changes, you will get what is called a "merge conflict." GitHub won't know which one to use. So, it will force you to decide. 
+When you are working on a project together, you are likely to run into a time when two of you are editing the same file at the same time. Sometimes, if you both try to push your changes, you will get what is called a "merge conflict." GitHub won't know which one to use. So, it will force you to decide. 
 
 When you try to push your changes to GitHub and someone else has already pushed their changes regarding the same file, you will get a message like this:
 
