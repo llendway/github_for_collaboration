@@ -3,6 +3,8 @@ title: "GitHub for collaboration"
 output: 
   html_document:
     keep_md: yes
+    toc: TRUE
+    toc_float: TRUE
 ---
 
 ```{r, message=FALSE, echo=FALSE}
@@ -69,7 +71,7 @@ git config
 xcode-select --install
 ```
 
-* Install the `usethis` package in R Studio. Then, close R Studio and reopen it. 
+* Now, go back to the Console in R Studio and install the `usethis` package in R Studio. Then, close R Studio and reopen it. 
 
 * Load the `usethis` library: 
 
@@ -77,7 +79,7 @@ xcode-select --install
 library(usethis)
 ```
 
-* Run the following code with some minor changes. The `user.name` is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The `user.email` *MUST* be the same as your GitHub user email. 
+* Run the following code in the console with some minor changes. The `user.name` is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The `user.email` *MUST* be the same as your GitHub user email. 
 
 ```
 use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
@@ -90,11 +92,11 @@ The word "repo" is short for repository, and that is exactly what it is: a place
 
 Let's go to [GitHub](https://github.com/) and login. After you login, you should see a little icon in the upper right-hand corner. Mine is an image of me. If I click on that a drop-down appears and I can choose "Your repositories". Do that. You should see something like this:
 
-![](new_repo.png)
+![](images/new_repo.png)
 
-Click on the "New" button. Name your repository `my_test_repo` and click "Initialize this repository with a README". Then click Create repository.
+Click on the "New" button. Choose Public and check the box next to Add a README file. Then click Create repository.
 
-![](create_new_repo.png)
+![](images/create_new_repo.png)
 
 There are things you can do directly within GitHub, but we'll focus on its integration with R Studio. 
 
@@ -102,19 +104,19 @@ There are things you can do directly within GitHub, but we'll focus on its integ
 
 Think of cloning a repo as "copying" the repository to your computer. But when it does the copying, it keeps the connection with the online repo. 
 
-Let's do this. On your my_test_repo page, choose the green button that says Clone or download. Copy the path by highlighting and clicking the icon that looks like a notebook with an arrow on it. 
+Let's do this. On your my_test_repo page, choose the green button that says Code and copy the path by highlighting and clicking the icon that looks like a notebook with an arrow on it. 
 
 Now go to R Studio. Click on File --> New Project ... You should see a window that looks like this:
 
-![](new_project.png)
+![](images/new_project.png)
 
 Choose Version Control. Then you should see a screen that looks like this:
 
-![](github.png)
+![](images/github.png)
 
 Choose Git. Then you should see a screen that looks like this one, without all the details filled in. The Repository URL is where you should paste the repo URL you cloned from github. It will also populate the Project directory name. Just leave that. **Pay attention** to where the project directory is located and change it to a better directory if appropriate. Click Create Project. 
 
-![](clone_git.png)
+![](images/clone_git.png)
 
 If you look in the Files tab in the lower right-hand pane of R Studio, you should see the .gitignore file, the project file (ends in .Rproj), and the README.md file. You should also see a Git tab in the upper right-hand pane in R Studio. If you click on the Git tab right now, you won't see anything there.  
 
@@ -126,7 +128,7 @@ The change you made has now been committed (pun intended!) to local memory. The 
 
 Next, we are going to push those changes to GitHub by clicking the green up arrow in the Git tab. This will give you a message that looks something like this:
 
-![](push_message.png)
+![](images/push_message.png)
 
 Were you prompted for a username and password? Try making another modification, committing, and pushing. Are you still prompted for a username and password? If so, I can help you solve this problem outside of class using Jenny Bryan's [resource](https://happygitwithr.com/rstudio-git-github.html#were-you-challenged-for-github-username-and-password). 
 
@@ -154,13 +156,13 @@ In your groups, try the following. You should each be collaborators on each othe
 
 2. The collaborator should try pulling by clicking the aqua down arrow in the Git tab. You should get a message that looks like this:
 
-![](good_pull.png)
+![](images/good_pull.png)
 
 3. The person who created the repo makes a change to their .rmd file. It can be a small change, like adding a sentence. That same person saves the file, commits (stage and write a commit message), and pushes it to GitHub. Check online to make sure the most recent changes have been pushed.
 
 4. The collaborator now pulls those changes to their local directory (to their computer). Click the pull icon. You should see a message sort of like this:
 
-![](pull_with_stuff.png)
+![](images/pull_with_stuff.png)
 
 And check the file where a change was made to make sure the change is reflected in the file on your computer. 
 
@@ -172,15 +174,15 @@ When you are working on a project together, you are likely to run into a time wh
 
 When you try to push your changes to GitHub and someone else has already pushed their changes regarding the same file, you will get a message like this:
 
-![](git_push_merge_conflict.png)
+![](images/git_push_merge_conflict.png)
 
 Then, when you do pull in the changes, you will get a message like this:
 
-![](git_pull_merge_conflict.png)
+![](images/git_pull_merge_conflict.png)
 
 Notice that it tells you the file where the merge conflict happened. You need to open that file and decide how to merge the conflicting information. It will look something like this at first:
 
-![](merge_conflict_fix_code.png)
+![](images/merge_conflict_fix_code.png)
 
 The part after the word `HEAD` is what is in your local file. Everything after the `======` is what is in the remote file (ie. the changes made by your collaborator). You can decide to fix this in any way you want: combine the two ideas, delete both, just keep one, etc. When you are finished, be sure to get rid of the `<<<<<<< HEAD` and `>>>>>>> ` followed by the alphanumeric string, plus any other weird characters.
 
