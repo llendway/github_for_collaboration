@@ -1542,40 +1542,40 @@ div.tocify {
 </div>
 <div id="install-git" class="section level1">
 <h1>Install Git</h1>
-<ul>
+<ol style="list-style-type: decimal">
 <li>Check to see if you already have Git installed. This will only be the case if you have used it somewhere else. To do this, either open the shell or, in R Studio, expand the Console. There should be a tab that says Terminal. In that area type</li>
-</ul>
+</ol>
 <pre><code>which git</code></pre>
 <p>If this returns something like</p>
 <pre><code>/usr/bin/git</code></pre>
 <p>then you are finished and don’t need to install Git. On a Windows machine, you may not even be able to type the <code>which git</code> command successfully. This should be fixed by installing git. Or you will have to use the shell.</p>
-<ul>
-<li><p>If you do not have Git installed, you need to install it. The instructions are slightly different for Windows and Macs.</p></li>
-<li><p>On a Windows machine:</p>
+<ol start="2" style="list-style-type: decimal">
+<li>If you do not have Git installed, you need to install it. The instructions are slightly different for Windows and Macs.</li>
+</ol>
+<p><strong>On a Windows:</strong></p>
 <ul>
 <li>Install <a href="https://gitforwindows.org/">Git for Windows</a>. When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.</li>
 <li>R Studio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.</li>
-</ul></li>
-<li><p>On a Mac:</p>
+</ul>
+<p><strong>On a Mac:</strong></p>
 <ul>
-<li>Go to the shell/terminal and enter <strong>one</strong> of these commands to elicit an offer to install developer command line tools. Accept the offer … click on install.</li>
-</ul></li>
+<li>Go to the <em>shell/terminal</em> and enter <strong>one</strong> of these commands to elicit an offer to install developer command line tools. Accept the offer … click on install.</li>
 </ul>
 <pre><code>git --version
 git config</code></pre>
 <ul>
-<li>Some of you on a Mac may need to do the following in the terminal if you try to open a project unsuccessfully. You’ll find out if this is the case in a moment.</li>
+<li>Some of you on a Mac may need to do the following in the <em>terminal</em> if you try to open a project unsuccessfully. You’ll find out if this is the case in a moment.</li>
 </ul>
 <pre><code>xcode-select --install</code></pre>
-<ul>
-<li><p>Now, go back to the Console in R Studio and install the <code>usethis</code> package in R Studio. Then, close R Studio and reopen it.</p></li>
-<li><p>Load the <code>usethis</code> library by running the following piece of code in the console:</p></li>
-</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Now, go back to the <em>Console</em> in R Studio and install the <code>usethis</code> package in R Studio. Then, close R Studio and reopen it.</p></li>
+<li><p>Load the <code>usethis</code> library by running the following piece of code in the <em>console</em>:</p></li>
+</ol>
 <pre><code>library(usethis)</code></pre>
-<ul>
-<li>Run the following code in the console with some minor changes. The <code>user.name</code> is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The <code>user.email</code> <em>MUST</em> be the same as your GitHub user email.</li>
-</ul>
-<pre><code>use_git_config(user.name = &quot;Jane Doe&quot;, user.email = &quot;jane@example.org&quot;)</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Run the following code in the <em>console</em> with some minor changes. The <code>user.name</code> is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The <code>user.email</code> <em>MUST</em> be the same as your GitHub user email.</li>
+</ol>
+<pre><code>use_git_config(user.name = &quot;Jane Doe&quot;, user.email =       &quot;jane@example.org&quot;)</code></pre>
 </div>
 <div id="create-your-first-repo-and-use-it-with-r-studio" class="section level1">
 <h1>Create your first repo and use it with R Studio</h1>

@@ -39,7 +39,7 @@ Why are we learning these things?!
 
 # Install Git
 
-* Check to see if you already have Git installed. This will only be the case if you have used it somewhere else. To do this, either open the shell or, in R Studio, expand the Console. There should be a tab that says Terminal. In that area type
+  1. Check to see if you already have Git installed. This will only be the case if you have used it somewhere else. To do this, either open the shell or, in R Studio, expand the Console. There should be a tab that says Terminal. In that area type
 
 ```
 which git
@@ -53,40 +53,40 @@ If this returns something like
 
 then you are finished and don't need to install Git. On a Windows machine, you may not even be able to type the `which git` command successfully. This should be fixed by installing git. Or you will have to use the shell. 
 
-* If you do not have Git installed, you need to install it. The instructions are slightly different for Windows and Macs.
+  2. If you do not have Git installed, you need to install it. The instructions are slightly different for Windows and Macs.
 
-* On a Windows machine:
+  **On a Windows:**
 
-  + Install [Git for Windows](https://gitforwindows.org/). When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults. 
-  + R Studio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.
+  * Install [Git for Windows](https://gitforwindows.org/). When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults. 
+  * R Studio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.
   
-* On a Mac:
+  **On a Mac:**
 
-  + Go to the shell/terminal and enter **one** of these commands to elicit an offer to install developer command line tools. Accept the offer ... click on install.
+  * Go to the *shell/terminal* and enter **one** of these commands to elicit an offer to install developer command line tools. Accept the offer ... click on install.
   
 ```
 git --version
 git config
 ```
 
-  + Some of you on a Mac may need to do the following in the terminal if you try to open a project unsuccessfully. You'll find out if this is the case in a moment.
+  * Some of you on a Mac may need to do the following in the *terminal* if you try to open a project unsuccessfully. You'll find out if this is the case in a moment.
   
 ```
 xcode-select --install
 ```
 
-* Now, go back to the Console in R Studio and install the `usethis` package in R Studio. Then, close R Studio and reopen it. 
+  3. Now, go back to the *Console* in R Studio and install the `usethis` package in R Studio. Then, close R Studio and reopen it. 
 
-* Load the `usethis` library by running the following piece of code in the console: 
+  4. Load the `usethis` library by running the following piece of code in the *console*: 
 
 ```
 library(usethis)
 ```
 
-* Run the following code in the console with some minor changes. The `user.name` is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The `user.email` *MUST* be the same as your GitHub user email. 
+  5. Run the following code in the *console* with some minor changes. The `user.name` is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The `user.email` *MUST* be the same as your GitHub user email. 
 
 ```
-use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
+use_git_config(user.name = "Jane Doe", user.email =       "jane@example.org")
 ```
 
 
