@@ -128,7 +128,13 @@ If you look in the Files tab in the lower right-hand pane of R Studio, you shoul
 
 With the Git tab open, let's open the README.md file in R Studio. Make a small change to the file by adding the sentence, "I am changing something in this file." Then, click the save icon. When you do this, you will see README.md show up in the Git tab. 
 
-Now, click the Commit button in the Git tab. Click the box next to the README.md file, **add a comment to the commit box**, and click commit. It will give you a message saying it is complete. 
+Now, click the Commit button in the Git tab. Put a check in the box next to the README.md file under the word *Staged* (in the future, you can stage multiple files at the same time by checking the boxes next to multiple files) and **add a comment to the commit box**. It should look something like this:
+
+![](images/git_stage_commit_msg.png)
+
+Lastly, click commit. It will give you a message saying it is complete. The message may seem cryptic if you're not used to them. It looks something like this:
+
+![]()
 
 The change you made has now been committed (pun intended!) to local memory. The changed file is only change on your computer, NOT online if you look at GitHub ... go check. Click the Diff button in the Git tab and you can see the history of your commits. 
 
