@@ -134,7 +134,7 @@ Now, click the Commit button in the Git tab. Put a check in the box next to the 
 
 Lastly, click commit. It will give you a message saying it is complete. The message may seem cryptic if you're not used to them. It looks something like this:
 
-![]()
+![](images/git_commit.png)
 
 The change you made has now been committed (pun intended!) to local memory. The changed file is only change on your computer, NOT online if you look at GitHub ... go check. Click the Diff button in the Git tab and you can see the history of your commits. 
 
