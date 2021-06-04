@@ -31,7 +31,7 @@ Why are we learning these things?!
 * Go to http://github.com
 * Create a username ... see Jenny Bryan's [tips](https://happygitwithr.com/github-acct.html). Incorporate your actual name, use another user name you already have, *pick a username you will be comfortable revealing to a future boss*. Your Macalester username might be a good option. 
 
-# Install Git
+# Install & configure Git
 
 * Check to see if you already have Git installed. This will only be the case if you have used it somewhere else. To do this, either open the shell or, in R Studio, expand the Console. There should be a tab that says Terminal. In that area type
 
@@ -83,6 +83,15 @@ library(usethis)
 use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
 ```
 
+# Set up a PAT
+
+A PAT, or Personal Access Token, is now necessary (or will be very soon) in order for RStudio and GitHub to talk to one another. Jenny Bryan discusses this is chapter 10 of [Happy Git with R](https://happygitwithr.com/credential-caching.html#credential-caching) and David Keyes discusses it in his [How to Use Git/Github with R](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/) blog post (see the Connect RStudio and GitHub section).
+
+1. First, run the `create_github_token()` function from the `usethis` library in the console. This will take you to the GitHub website where you can create a token - store that somewhere safe and don't lose it! You'll need it in a moment and maybe sometime in the distant future.  
+2. Install the `gitcreds` package in RStudio and load the library using `library(gitcreds)` (you can do that in the console).  
+3. Run the `gitcreds_set()` function in the console. If you are given options, choose the option to Replace these credentials and then paste in your PAT that you just created in the previous step. 
+
+Let me know if you have issues with any of these steps.
 
 # Create your first repo and use it with R Studio
 
@@ -128,7 +137,7 @@ Next, we are going to push those changes to GitHub by clicking the green up arro
 
 ![](push_message.png)
 
-Were you prompted for a username and password? Try making another modification, committing, and pushing. Are you still prompted for a username and password? If so, I can help you solve this problem outside of class using Jenny Bryan's [resource](https://happygitwithr.com/rstudio-git-github.html#were-you-challenged-for-github-username-and-password). 
+Were you prompted for a username and password? Try making another modification, committing, and pushing. Are you still prompted for a username and password? If so, go back and make sure you set up a Personal Access Token (PAT).
 
 **YOUR TURN!!**
 
