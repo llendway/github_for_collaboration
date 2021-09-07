@@ -97,7 +97,8 @@ A PAT, or Personal Access Token, is now necessary (or will be very soon) in orde
 
 1. First, run the `create_github_token()` function from the `usethis` library in the console. This will take you to the GitHub website where you can create a token - store that somewhere safe and don't lose it! You'll need it in a moment and maybe sometime in the distant future.  
 2. Install the `gitcreds` package in RStudio and load the library using `library(gitcreds)` (you can do that in the console).  
-3. Run the `gitcreds_set()` function in the console. If you are given options, choose the option to Replace these credentials and then paste in your PAT that you just created in the previous step. 
+3. Run the `gitcreds_set()` function in the console. If you are given options, choose the option to Replace these credentials and then paste in your PAT that you just created in the previous step.  
+4. When you next commit and push, it may still ask you for your github username and password, **use your PAT when it asks for your password!!**
 
 Let me know if you have issues with any of these steps.
 
