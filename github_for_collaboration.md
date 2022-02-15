@@ -15,7 +15,7 @@ Much of this material has been adapted from [Happy git with R by Jenny Bryan](ht
 
 # Video tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QLFc9gw_Hfs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QLFc9gw_Hfs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 [Voicethread tutorial](https://voicethread.com/share/15440257/)
 
@@ -51,7 +51,9 @@ If this returns something like
 /usr/bin/git
 ```
 
-then you are finished and don't need to install Git. On a Windows machine, you may not even be able to type the `which git` command successfully. This should be fixed by installing git. Or you will have to use the shell. 
+then you are finished and don't need to install Git. 
+
+On a Windows machine, you may not even be able to type the `which git` command successfully. This should be fixed by installing git. Or you will have to use the shell. You can also try typing `where git`.
 
   2. If you do not have Git installed, you need to install it. The instructions are slightly different for Windows and Macs.
 
@@ -86,7 +88,7 @@ library(usethis)
   5. Run the following code in the *console* with some minor changes. The `user.name` is your Git username. This can be different from your GitHub username, although it might be a good idea to just keep it the same. The `user.email` *MUST* be the same as your GitHub user email. 
 
 ```
-use_git_config(user.name = "Jane Doe", user.email =       "jane@example.org")
+use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
 ```
 
 # Set up a PAT
@@ -98,7 +100,7 @@ A PAT, or Personal Access Token, is now necessary (or will be very soon) in orde
 3. Run the `gitcreds_set()` function in the console. If you are given options, choose the option to Replace these credentials and then paste in your PAT that you just created in the previous step.  
 4. When you next commit and push, it may still ask you for your github username and password, **use your PAT when it asks for your password!!**
 
-Let me know if you have issues with any of these steps.
+Let me know if you have issues with any of these steps. My first suggestion will always be to restart your computer. Sadly, I once spent two hours trying to debug git errors only to have them magically fixed when I restarted. Don't be me.
 
 # Create your first repo and use it with R Studio
 
